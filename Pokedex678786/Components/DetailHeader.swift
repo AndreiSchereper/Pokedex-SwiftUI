@@ -17,18 +17,23 @@ struct DetailHeader: View {
                     .foregroundColor(.gray)
             }
 
-            HStack(spacing: 8) {
-                ForEach(details.types, id: \.type.name) { type in
-                    Text(type.type.name.capitalized)
-                        .font(.custom("Poppins-SemiBold", size: 14))
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 4)
-                        .background(typeColor(for: type.type.name))
-                        .cornerRadius(16)
+            // Types (Now Left-Aligned)
+            VStack(alignment: .leading, spacing: 8) {
+                HStack(spacing: 8) {
+                    ForEach(details.types, id: \.type.name) { type in
+                        Text(type.type.name.capitalized)
+                            .font(.custom("Poppins-SemiBold", size: 14))
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 4)
+                            .background(typeColor(for: type.type.name)) // Use the global function
+                            .cornerRadius(16)
+                    }
                 }
             }
+            .frame(maxWidth: .infinity, alignment: .leading) // Ensure left alignment
 
+            // Sprites (Front and Back)
             HStack(spacing: 16) {
                 AsyncImage(url: URL(string: details.sprites.frontDefault ?? "")) { image in
                     image
@@ -50,15 +55,6 @@ struct DetailHeader: View {
                 }
                 .frame(width: 150, height: 150)
             }
-        }
-    }
-
-    private func typeColor(for type: String) -> Color {
-        switch type.lowercased() {
-        case "grass": return .green
-        case "poison": return .purple
-        case "fire": return .red
-        default: return .gray
         }
     }
 }

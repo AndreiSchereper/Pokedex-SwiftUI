@@ -16,8 +16,11 @@ struct DetailStatsTab: View {
                             .font(.custom("Poppins-SemiBold", size: 14))
                             .foregroundColor(.gray)
                     }
-                    ProgressBar(progress: min(Double(stat.baseStat) / 100.0, 1.0), color: Color("AccentColor"))
-                        .frame(height: 8)
+                    ProgressBar(
+                        progress: min(Double(stat.baseStat) / 100.0, 1.0),
+                        color: typeColor(for: details.types.first?.type.name ?? "unknown") // Use global type color
+                    )
+                    .frame(height: 8)
                 }
             }
         }

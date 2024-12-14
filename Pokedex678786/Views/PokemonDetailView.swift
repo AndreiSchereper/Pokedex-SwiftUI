@@ -18,7 +18,13 @@ struct DetailView: View {
                     VStack(spacing: 16) {
                         DetailHeader(details: details)
 
-                        DetailTabs(selectedTab: $selectedTab)
+                        // Dynamically determine the tab color
+                        if let firstType = details.types.first {
+                            DetailTabs(
+                                selectedTab: $selectedTab,
+                                typeColor: typeColor(for: firstType.type.name) // Use global function
+                            )
+                        }
 
                         if selectedTab == "About" {
                             DetailAboutTab(details: details)
@@ -44,7 +50,4 @@ struct DetailView: View {
         }
         .navigationBarBackButtonHidden(false)
     }
-}
-#Preview {
-    ContentView()
 }
