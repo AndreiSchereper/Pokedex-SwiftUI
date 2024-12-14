@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		759DF5C52D0DCCD800F78EFB /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5B42D0DCCD800F78EFB /* Poppins-Bold.ttf */; };
+		759DF5C62D0DCCD800F78EFB /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5C22D0DCCD800F78EFB /* Poppins-Thin.ttf */; };
+		759DF5C72D0DCCD800F78EFB /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5B22D0DCCD800F78EFB /* Poppins-Black.ttf */; };
+		759DF5C82D0DCCD800F78EFB /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5B32D0DCCD800F78EFB /* Poppins-BlackItalic.ttf */; };
+		759DF5C92D0DCCD800F78EFB /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5B82D0DCCD800F78EFB /* Poppins-ExtraLight.ttf */; };
+		759DF5CA2D0DCCD800F78EFB /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5C02D0DCCD800F78EFB /* Poppins-SemiBold.ttf */; };
+		759DF5CB2D0DCCD800F78EFB /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5C32D0DCCD800F78EFB /* Poppins-ThinItalic.ttf */; };
+		759DF5CC2D0DCCD800F78EFB /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5C12D0DCCD800F78EFB /* Poppins-SemiBoldItalic.ttf */; };
+		759DF5CD2D0DCCD800F78EFB /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5B72D0DCCD800F78EFB /* Poppins-ExtraBoldItalic.ttf */; };
+		759DF5CE2D0DCCD800F78EFB /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5B62D0DCCD800F78EFB /* Poppins-ExtraBold.ttf */; };
+		759DF5CF2D0DCCD800F78EFB /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5B52D0DCCD800F78EFB /* Poppins-BoldItalic.ttf */; };
+		759DF5D02D0DCCD800F78EFB /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5B92D0DCCD800F78EFB /* Poppins-ExtraLightItalic.ttf */; };
+		759DF5D12D0DCCD800F78EFB /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5BD2D0DCCD800F78EFB /* Poppins-Medium.ttf */; };
+		759DF5D22D0DCCD800F78EFB /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5BB2D0DCCD800F78EFB /* Poppins-Light.ttf */; };
+		759DF5D32D0DCCD800F78EFB /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5BC2D0DCCD800F78EFB /* Poppins-LightItalic.ttf */; };
+		759DF5D42D0DCCD800F78EFB /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5BE2D0DCCD800F78EFB /* Poppins-MediumItalic.ttf */; };
+		759DF5D52D0DCCD800F78EFB /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5BA2D0DCCD800F78EFB /* Poppins-Italic.ttf */; };
+		759DF5D62D0DCCD800F78EFB /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759DF5BF2D0DCCD800F78EFB /* Poppins-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		759DF5242D0DBECF00F78EFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 759DF50B2D0DBECE00F78EFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 759DF5122D0DBECE00F78EFB;
+			remoteInfo = Pokedex678786;
+		};
+		759DF52E2D0DBECF00F78EFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 759DF50B2D0DBECE00F78EFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 759DF5122D0DBECE00F78EFB;
+			remoteInfo = Pokedex678786;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		759DF5132D0DBECE00F78EFB /* Pokedex678786.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex678786.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		759DF5232D0DBECF00F78EFB /* Pokedex678786Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pokedex678786Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		759DF52D2D0DBECF00F78EFB /* Pokedex678786UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pokedex678786UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		759DF5B22D0DCCD800F78EFB /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		759DF5B32D0DCCD800F78EFB /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		759DF5B42D0DCCD800F78EFB /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		759DF5B52D0DCCD800F78EFB /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		759DF5B62D0DCCD800F78EFB /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		759DF5B72D0DCCD800F78EFB /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		759DF5B82D0DCCD800F78EFB /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		759DF5B92D0DCCD800F78EFB /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		759DF5BA2D0DCCD800F78EFB /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		759DF5BB2D0DCCD800F78EFB /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		759DF5BC2D0DCCD800F78EFB /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		759DF5BD2D0DCCD800F78EFB /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		759DF5BE2D0DCCD800F78EFB /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		759DF5BF2D0DCCD800F78EFB /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		759DF5C02D0DCCD800F78EFB /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		759DF5C12D0DCCD800F78EFB /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		759DF5C22D0DCCD800F78EFB /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		759DF5C32D0DCCD800F78EFB /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		759DF5462D0DCCAD00F78EFB /* Exceptions for "Pokedex678786" folder in "Pokedex678786" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 759DF5122D0DBECE00F78EFB /* Pokedex678786 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		759DF5152D0DBECE00F78EFB /* Pokedex678786 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				759DF5462D0DCCAD00F78EFB /* Exceptions for "Pokedex678786" folder in "Pokedex678786" target */,
+			);
+			path = Pokedex678786;
+			sourceTree = "<group>";
+		};
+		759DF5262D0DBECF00F78EFB /* Pokedex678786Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Pokedex678786Tests;
+			sourceTree = "<group>";
+		};
+		759DF5302D0DBECF00F78EFB /* Pokedex678786UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Pokedex678786UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		759DF5102D0DBECE00F78EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759DF5202D0DBECF00F78EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759DF52A2D0DBECF00F78EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		759DF50A2D0DBECE00F78EFB = {
+			isa = PBXGroup;
+			children = (
+				759DF5C42D0DCCD800F78EFB /* Poppins */,
+				759DF5152D0DBECE00F78EFB /* Pokedex678786 */,
+				759DF5262D0DBECF00F78EFB /* Pokedex678786Tests */,
+				759DF5302D0DBECF00F78EFB /* Pokedex678786UITests */,
+				759DF5142D0DBECE00F78EFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		759DF5142D0DBECE00F78EFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				759DF5132D0DBECE00F78EFB /* Pokedex678786.app */,
+				759DF5232D0DBECF00F78EFB /* Pokedex678786Tests.xctest */,
+				759DF52D2D0DBECF00F78EFB /* Pokedex678786UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		759DF5C42D0DCCD800F78EFB /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				759DF5B22D0DCCD800F78EFB /* Poppins-Black.ttf */,
+				759DF5B32D0DCCD800F78EFB /* Poppins-BlackItalic.ttf */,
+				759DF5B42D0DCCD800F78EFB /* Poppins-Bold.ttf */,
+				759DF5B52D0DCCD800F78EFB /* Poppins-BoldItalic.ttf */,
+				759DF5B62D0DCCD800F78EFB /* Poppins-ExtraBold.ttf */,
+				759DF5B72D0DCCD800F78EFB /* Poppins-ExtraBoldItalic.ttf */,
+				759DF5B82D0DCCD800F78EFB /* Poppins-ExtraLight.ttf */,
+				759DF5B92D0DCCD800F78EFB /* Poppins-ExtraLightItalic.ttf */,
+				759DF5BA2D0DCCD800F78EFB /* Poppins-Italic.ttf */,
+				759DF5BB2D0DCCD800F78EFB /* Poppins-Light.ttf */,
+				759DF5BC2D0DCCD800F78EFB /* Poppins-LightItalic.ttf */,
+				759DF5BD2D0DCCD800F78EFB /* Poppins-Medium.ttf */,
+				759DF5BE2D0DCCD800F78EFB /* Poppins-MediumItalic.ttf */,
+				759DF5BF2D0DCCD800F78EFB /* Poppins-Regular.ttf */,
+				759DF5C02D0DCCD800F78EFB /* Poppins-SemiBold.ttf */,
+				759DF5C12D0DCCD800F78EFB /* Poppins-SemiBoldItalic.ttf */,
+				759DF5C22D0DCCD800F78EFB /* Poppins-Thin.ttf */,
+				759DF5C32D0DCCD800F78EFB /* Poppins-ThinItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		759DF5122D0DBECE00F78EFB /* Pokedex678786 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 759DF5372D0DBECF00F78EFB /* Build configuration list for PBXNativeTarget "Pokedex678786" */;
+			buildPhases = (
+				759DF50F2D0DBECE00F78EFB /* Sources */,
+				759DF5102D0DBECE00F78EFB /* Frameworks */,
+				759DF5112D0DBECE00F78EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				759DF5152D0DBECE00F78EFB /* Pokedex678786 */,
+			);
+			name = Pokedex678786;
+			packageProductDependencies = (
+			);
+			productName = Pokedex678786;
+			productReference = 759DF5132D0DBECE00F78EFB /* Pokedex678786.app */;
+			productType = "com.apple.product-type.application";
+		};
+		759DF5222D0DBECF00F78EFB /* Pokedex678786Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 759DF53A2D0DBECF00F78EFB /* Build configuration list for PBXNativeTarget "Pokedex678786Tests" */;
+			buildPhases = (
+				759DF51F2D0DBECF00F78EFB /* Sources */,
+				759DF5202D0DBECF00F78EFB /* Frameworks */,
+				759DF5212D0DBECF00F78EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				759DF5252D0DBECF00F78EFB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				759DF5262D0DBECF00F78EFB /* Pokedex678786Tests */,
+			);
+			name = Pokedex678786Tests;
+			packageProductDependencies = (
+			);
+			productName = Pokedex678786Tests;
+			productReference = 759DF5232D0DBECF00F78EFB /* Pokedex678786Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		759DF52C2D0DBECF00F78EFB /* Pokedex678786UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 759DF53D2D0DBECF00F78EFB /* Build configuration list for PBXNativeTarget "Pokedex678786UITests" */;
+			buildPhases = (
+				759DF5292D0DBECF00F78EFB /* Sources */,
+				759DF52A2D0DBECF00F78EFB /* Frameworks */,
+				759DF52B2D0DBECF00F78EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				759DF52F2D0DBECF00F78EFB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				759DF5302D0DBECF00F78EFB /* Pokedex678786UITests */,
+			);
+			name = Pokedex678786UITests;
+			packageProductDependencies = (
+			);
+			productName = Pokedex678786UITests;
+			productReference = 759DF52D2D0DBECF00F78EFB /* Pokedex678786UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		759DF50B2D0DBECE00F78EFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					759DF5122D0DBECE00F78EFB = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					759DF5222D0DBECF00F78EFB = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 759DF5122D0DBECE00F78EFB;
+					};
+					759DF52C2D0DBECF00F78EFB = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 759DF5122D0DBECE00F78EFB;
+					};
+				};
+			};
+			buildConfigurationList = 759DF50E2D0DBECE00F78EFB /* Build configuration list for PBXProject "Pokedex678786" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 759DF50A2D0DBECE00F78EFB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 759DF5142D0DBECE00F78EFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				759DF5122D0DBECE00F78EFB /* Pokedex678786 */,
+				759DF5222D0DBECF00F78EFB /* Pokedex678786Tests */,
+				759DF52C2D0DBECF00F78EFB /* Pokedex678786UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		759DF5112D0DBECE00F78EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759DF5C52D0DCCD800F78EFB /* Poppins-Bold.ttf in Resources */,
+				759DF5C62D0DCCD800F78EFB /* Poppins-Thin.ttf in Resources */,
+				759DF5C72D0DCCD800F78EFB /* Poppins-Black.ttf in Resources */,
+				759DF5C82D0DCCD800F78EFB /* Poppins-BlackItalic.ttf in Resources */,
+				759DF5C92D0DCCD800F78EFB /* Poppins-ExtraLight.ttf in Resources */,
+				759DF5CA2D0DCCD800F78EFB /* Poppins-SemiBold.ttf in Resources */,
+				759DF5CB2D0DCCD800F78EFB /* Poppins-ThinItalic.ttf in Resources */,
+				759DF5CC2D0DCCD800F78EFB /* Poppins-SemiBoldItalic.ttf in Resources */,
+				759DF5CD2D0DCCD800F78EFB /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				759DF5CE2D0DCCD800F78EFB /* Poppins-ExtraBold.ttf in Resources */,
+				759DF5CF2D0DCCD800F78EFB /* Poppins-BoldItalic.ttf in Resources */,
+				759DF5D02D0DCCD800F78EFB /* Poppins-ExtraLightItalic.ttf in Resources */,
+				759DF5D12D0DCCD800F78EFB /* Poppins-Medium.ttf in Resources */,
+				759DF5D22D0DCCD800F78EFB /* Poppins-Light.ttf in Resources */,
+				759DF5D32D0DCCD800F78EFB /* Poppins-LightItalic.ttf in Resources */,
+				759DF5D42D0DCCD800F78EFB /* Poppins-MediumItalic.ttf in Resources */,
+				759DF5D52D0DCCD800F78EFB /* Poppins-Italic.ttf in Resources */,
+				759DF5D62D0DCCD800F78EFB /* Poppins-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759DF5212D0DBECF00F78EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759DF52B2D0DBECF00F78EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		759DF50F2D0DBECE00F78EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759DF51F2D0DBECF00F78EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759DF5292D0DBECF00F78EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		759DF5252D0DBECF00F78EFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 759DF5122D0DBECE00F78EFB /* Pokedex678786 */;
+			targetProxy = 759DF5242D0DBECF00F78EFB /* PBXContainerItemProxy */;
+		};
+		759DF52F2D0DBECF00F78EFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 759DF5122D0DBECE00F78EFB /* Pokedex678786 */;
+			targetProxy = 759DF52E2D0DBECF00F78EFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		759DF5352D0DBECF00F78EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		759DF5362D0DBECF00F78EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		759DF5382D0DBECF00F78EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pokedex678786/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokedex678786/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.schereper.andrei.Pokedex678786;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		759DF5392D0DBECF00F78EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pokedex678786/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokedex678786/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.schereper.andrei.Pokedex678786;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		759DF53B2D0DBECF00F78EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.schereper.andrei.Pokedex678786Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokedex678786.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pokedex678786";
+			};
+			name = Debug;
+		};
+		759DF53C2D0DBECF00F78EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.schereper.andrei.Pokedex678786Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokedex678786.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pokedex678786";
+			};
+			name = Release;
+		};
+		759DF53E2D0DBECF00F78EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.schereper.andrei.Pokedex678786UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pokedex678786;
+			};
+			name = Debug;
+		};
+		759DF53F2D0DBECF00F78EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.schereper.andrei.Pokedex678786UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pokedex678786;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		759DF50E2D0DBECE00F78EFB /* Build configuration list for PBXProject "Pokedex678786" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759DF5352D0DBECF00F78EFB /* Debug */,
+				759DF5362D0DBECF00F78EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		759DF5372D0DBECF00F78EFB /* Build configuration list for PBXNativeTarget "Pokedex678786" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759DF5382D0DBECF00F78EFB /* Debug */,
+				759DF5392D0DBECF00F78EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		759DF53A2D0DBECF00F78EFB /* Build configuration list for PBXNativeTarget "Pokedex678786Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759DF53B2D0DBECF00F78EFB /* Debug */,
+				759DF53C2D0DBECF00F78EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		759DF53D2D0DBECF00F78EFB /* Build configuration list for PBXNativeTarget "Pokedex678786UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759DF53E2D0DBECF00F78EFB /* Debug */,
+				759DF53F2D0DBECF00F78EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 759DF50B2D0DBECE00F78EFB /* Project object */;
+}
