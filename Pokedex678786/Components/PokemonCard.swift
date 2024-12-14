@@ -7,7 +7,7 @@ struct PokemonCardView: View {
         ZStack(alignment: .topLeading) {
             // Card Background
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white) // Solid white background for the card
+                .fill(Color("CardColor")) // Use CardColor from Assets
                 .shadow(color: .black.opacity(0.1), radius: 6, x: 0, y: 4)
 
             VStack(spacing: 12) {

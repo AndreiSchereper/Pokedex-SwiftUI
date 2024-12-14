@@ -17,9 +17,27 @@ class PokemonRepository {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let response):
-                    self?.cachedPokemon.append(contentsOf: response.results)
-                    self?.nextPageUrl = response.next // Update next page URL
-                    completion(.success(self?.cachedPokemon ?? []))
+                    let newPokemon = response.results // Only the new Pokémon
+                    self?.cachedPokemon.append(contentsOf: newPokemon) // Append only the new batch
+                    self?.nextPageUrl = response.next // Update the next page URL
+                    completion(.success(newPokemon)) // Return only the new Pokémon
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+            }
+        }
+    }
+    
+    func fetchAllPokemon(completion: @escaping (Result<[Pokemon], Error>) -> Void) {
+        let url = "https://pokeapi.co/api/v2/pokemon?limit=10000&offset=0" // Fetch all Pokémon
+
+        apiService.fetchPokemonList(url: url) { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let response):
+                    // Cache all Pokémon
+                    self?.cachedPokemon = response.results
+                    completion(.success(response.results))
                 case .failure(let error):
                     completion(.failure(error))
                 }

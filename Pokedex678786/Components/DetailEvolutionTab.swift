@@ -59,8 +59,8 @@ struct EvolutionCard: View {
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white)
-                .shadow(color: .black.opacity(0.1), radius: 6, x: 0, y: 4)
+                .fill(Color("CardColor")) // Use CardColor for background
+                .shadow(color: .black.opacity(0.1), radius: 6, x: 0, y: 4) // Subtle shadow for depth
         )
     }
 }

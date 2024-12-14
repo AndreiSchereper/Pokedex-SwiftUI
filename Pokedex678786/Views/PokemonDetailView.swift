@@ -14,7 +14,7 @@ struct DetailView: View {
                 Text("Error: \(errorMessage)")
                     .foregroundColor(.red)
             } else if let details = viewModel.pokemonDetails {
-                ScrollView {
+                ScrollView(.vertical, showsIndicators: false) { // Disable scroll indicators here
                     VStack(spacing: 16) {
                         DetailHeader(details: details)
 

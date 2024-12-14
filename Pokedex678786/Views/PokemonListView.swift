@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct PokemonListView: View {
     @StateObject private var viewModel = PokemonListViewModel()
     @State private var selectedPokemonID: Int?
@@ -12,6 +11,12 @@ struct PokemonListView: View {
     var body: some View {
         NavigationView {
             VStack {
+                // Search Bar
+                SearchBar(text: $viewModel.searchQuery)
+                    .onChange(of: viewModel.searchQuery) { _ in
+                        viewModel.searchPokemon() // Trigger search on text change
+                    }
+
                 if let errorMessage = viewModel.errorMessage {
                     Text("Error: \(errorMessage)")
                         .foregroundColor(.red)
@@ -27,15 +32,20 @@ struct PokemonListView: View {
                                 }
                         }
 
-                        // Pagination Loader
+                        // Pagination Loader (only when not searching)
                         if viewModel.isLoading {
                             ProgressView()
                                 .padding()
-                        } else {
+                        } else if !viewModel.isSearching { // Disable pagination during search
                             Color.clear
                                 .onAppear {
                                     viewModel.fetchPokemonList()
                                 }
+                        } else if viewModel.pokemonList.isEmpty {
+                            Text("No Pokémon Found")
+                                .font(.custom("Poppins-SemiBold", size: 16))
+                                .foregroundColor(.gray)
+                                .padding()
                         }
                     }
                     .padding(.horizontal, 16)
@@ -55,8 +65,9 @@ struct PokemonListView: View {
             )
             .onAppear {
                 viewModel.fetchPokemonList()
+                viewModel.fetchAllPokemon() // Pre-fetch all Pokémon for search
             }
-            .background(Color("BackgroundColor").edgesIgnoringSafeArea(.all)) // Use custom background color
+            .background(Color("BackgroundColor").edgesIgnoringSafeArea(.all))
         }
     }
 }
