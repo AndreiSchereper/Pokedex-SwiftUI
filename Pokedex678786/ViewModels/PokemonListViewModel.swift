@@ -1,27 +1,28 @@
 import SwiftUI
 
 class PokemonListViewModel: ObservableObject {
-    @Published var pokemonList: [Pokemon] = [] // Displayed Pokémon
+    @Published var pokemonList: [Pokemon] = []
     @Published var isLoading = false
     @Published var errorMessage: String?
-    @Published var searchQuery: String = "" // Search term
-    @Published var isRefreshing = false
-    @Published var isSearching = false // New flag to track search state
+    @Published var searchQuery: String = ""
+    @Published var isSearching = false
 
+    var lastVisiblePokemonID: Int? // Tracks the last visible Pokémon's ID
+    private var allPokemon: [Pokemon] = []
+    private var paginationOffset: Int = 0
+    private let pageSize: Int = 20
     private let repository = PokemonRepository()
-    private var allPokemon: [Pokemon] = [] // Cached full Pokémon list
 
     func fetchPokemonList() {
-        guard !isLoading, !isSearching else { return } // Prevent duplicate calls and block during search
+        guard !isLoading, !isSearching else { return }
         isLoading = true
-        errorMessage = nil
-
         repository.fetchPokemonList { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false
                 switch result {
                 case .success(let newPokemon):
-                    self?.pokemonList.append(contentsOf: newPokemon) // Append only the new Pokémon
+                    self?.pokemonList.append(contentsOf: newPokemon)
+                    self?.paginationOffset += self?.pageSize ?? 0
                 case .failure(let error):
                     self?.errorMessage = error.localizedDescription
                 }
@@ -30,13 +31,14 @@ class PokemonListViewModel: ObservableObject {
     }
 
     func fetchAllPokemon() {
+        guard allPokemon.isEmpty else { return }
         isLoading = true
         repository.fetchAllPokemon { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false
                 switch result {
                 case .success(let allPokemon):
-                    self?.allPokemon = allPokemon // Cache full list
+                    self?.allPokemon = allPokemon
                 case .failure(let error):
                     self?.errorMessage = error.localizedDescription
                 }
@@ -45,10 +47,9 @@ class PokemonListViewModel: ObservableObject {
     }
 
     func searchPokemon() {
-        isSearching = !searchQuery.isEmpty // Update the search state
+        isSearching = !searchQuery.isEmpty
         if searchQuery.isEmpty {
-            // Reset to the initial displayed Pokémon (e.g., first 20)
-            pokemonList = allPokemon.prefix(20).map { $0 }
+            pokemonList = Array(allPokemon.prefix(paginationOffset))
         } else {
             pokemonList = allPokemon.filter {
                 $0.name.localizedCaseInsensitiveContains(searchQuery)

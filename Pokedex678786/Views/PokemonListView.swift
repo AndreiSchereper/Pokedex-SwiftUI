@@ -1,4 +1,5 @@
 import SwiftUI
+
 struct PokemonListView: View {
     @StateObject private var viewModel = PokemonListViewModel()
     @State private var selectedPokemonID: Int?
@@ -14,7 +15,7 @@ struct PokemonListView: View {
                 // Search Bar
                 SearchBar(text: $viewModel.searchQuery)
                     .onChange(of: viewModel.searchQuery) { _ in
-                        viewModel.searchPokemon() // Trigger search on text change
+                        viewModel.searchPokemon()
                     }
 
                 if let errorMessage = viewModel.errorMessage {
@@ -23,33 +24,44 @@ struct PokemonListView: View {
                         .padding()
                 }
 
-                ScrollView {
-                    LazyVGrid(columns: columns, spacing: 16) {
-                        ForEach(viewModel.pokemonList) { pokemon in
-                            PokemonCardView(pokemon: pokemon)
-                                .onTapGesture {
-                                    selectedPokemonID = pokemon.id
-                                }
-                        }
+                ScrollViewReader { scrollProxy in
+                    ScrollView {
+                        LazyVGrid(columns: columns, spacing: 16) {
+                            ForEach(viewModel.pokemonList) { pokemon in
+                                PokemonCardView(pokemon: pokemon)
+                                    .onTapGesture {
+                                        selectedPokemonID = pokemon.id
+                                    }
+                            }
 
-                        // Pagination Loader (only when not searching)
-                        if viewModel.isLoading {
-                            ProgressView()
-                                .padding()
-                        } else if !viewModel.isSearching { // Disable pagination during search
-                            Color.clear
-                                .onAppear {
-                                    viewModel.fetchPokemonList()
+                            // Pagination Loader
+                            if viewModel.isLoading {
+                                ProgressView()
+                                    .padding()
+                            } else if !viewModel.isSearching {
+                                Color.clear
+                                    .frame(height: 50)
+                                    .onAppear {
+                                        viewModel.fetchPokemonList()
+                                    }
+                            } else if viewModel.pokemonList.isEmpty {
+                                Text("No Pokémon Found")
+                                    .font(.custom("Poppins-SemiBold", size: 16))
+                                    .foregroundColor(.gray)
+                                    .padding()
+                            }
+                        }
+                        .padding(.horizontal, 16)
+                        .padding(.top, 8)
+                        .onChange(of: viewModel.pokemonList) { _ in
+                            if viewModel.isSearching {
+                                // Scroll to the top only during a search
+                                if let firstPokemon = viewModel.pokemonList.first {
+                                    scrollProxy.scrollTo(firstPokemon.id, anchor: .top)
                                 }
-                        } else if viewModel.pokemonList.isEmpty {
-                            Text("No Pokémon Found")
-                                .font(.custom("Poppins-SemiBold", size: 16))
-                                .foregroundColor(.gray)
-                                .padding()
+                            }
                         }
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.top, 8)
                 }
             }
             .navigationTitle("Pokédex")
@@ -65,7 +77,7 @@ struct PokemonListView: View {
             )
             .onAppear {
                 viewModel.fetchPokemonList()
-                viewModel.fetchAllPokemon() // Pre-fetch all Pokémon for search
+                viewModel.fetchAllPokemon()
             }
             .background(Color("BackgroundColor").edgesIgnoringSafeArea(.all))
         }
