@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 @main
 struct PokedexApp: App {
@@ -27,5 +28,6 @@ struct PokedexApp: App {
                 }
             }
         }
+        .modelContainer(for: FavoritePokemon.self)
     }
 }

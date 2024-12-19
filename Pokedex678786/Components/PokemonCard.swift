@@ -3,6 +3,7 @@ import SwiftUI
 /// A card component that displays a Pokémon's image, name, and ID.
 struct PokemonCardView: View {
     let pokemon: Pokemon // Data model containing details about the Pokémon
+    @State private var refreshID = UUID() // Unique ID to force a refresh
 
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -13,14 +14,29 @@ struct PokemonCardView: View {
 
             VStack(spacing: 12) {
                 // Pokémon image
-                AsyncImage(url: pokemon.imageUrl) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 120, height: 120) // Scaled image dimensions
-                } placeholder: {
-                    ProgressView() // Placeholder while the image loads
+                AsyncImage(
+                    url: pokemon.imageUrl,
+                    transaction: Transaction(animation: .easeInOut)
+                ) { phase in
+                    switch phase {
+                    case .empty:
+                        ProgressView()
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120, height: 120)
+                    case .failure:
+                        Image(systemName: "photo") // Fallback if the image fails to load
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120, height: 120)
+                            .foregroundColor(.gray)
+                    @unknown default:
+                        EmptyView()
+                    }
                 }
+                .id(refreshID) // Force AsyncImage to refresh
 
                 // Pokémon name
                 Text(pokemon.name.capitalized)
@@ -44,5 +60,9 @@ struct PokemonCardView: View {
                 .padding([.top, .leading], 12) // Positioning within the card
         }
         .frame(height: 200) // Fixed height for the card
+        .onAppear {
+            // Trigger a refresh when the view appears
+            refreshID = UUID()
+        }
     }
 }

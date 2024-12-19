@@ -8,7 +8,7 @@ struct ContentView: View {
                     Label("Pokedex", systemImage: "house")
                 }
 
-            FavoritesPageView()
+            FavoritesView()
                 .tabItem {
                     Label("Favorites", systemImage: "heart.fill")
                 }
