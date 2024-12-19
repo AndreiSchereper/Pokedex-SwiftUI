@@ -46,6 +46,7 @@ struct DetailHeader: View {
                         Image(systemName: "square.and.arrow.up")
                             .foregroundColor(.blue)
                             .font(.title)
+                            .offset(y: -4)
                     }
                     .sheet(isPresented: $isShareSheetPresented) {
                         ShareSheet(activityItems: [generateShareContent()])

@@ -1,34 +1,25 @@
 import SwiftUI
 
+/// Main view for the app, displaying a tab-based interface.
 struct ContentView: View {
     var body: some View {
         TabView {
+            // Tab for the Pokémon list (Pokedex)
             PokemonListView()
                 .tabItem {
-                    Label("Pokedex", systemImage: "house")
+                    Label("Pokedex", systemImage: "house") // Tab icon and label
                 }
 
+            // Tab for the user's favorite Pokémon
             FavoritesView()
                 .tabItem {
-                    Label("Favorites", systemImage: "heart.fill")
+                    Label("Favorites", systemImage: "heart.fill") // Tab icon and label
                 }
         }
         .accentColor(.red) // Highlight color for the selected tab
     }
 }
 
-// Placeholder for the Favorites Page
-struct FavoritesPageView: View {
-    var body: some View {
-        ZStack {
-            Color("BackgroundColor").edgesIgnoringSafeArea(.all)
-            Text("Favorites Page")
-                .font(.largeTitle)
-                .foregroundColor(Color("TextColor"))
-        }
-    }
-}
-
 #Preview {
-    ContentView()
+    ContentView() // Preview for the ContentView in Xcode
 }

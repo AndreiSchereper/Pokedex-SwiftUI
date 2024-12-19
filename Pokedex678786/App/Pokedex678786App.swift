@@ -3,22 +3,22 @@ import SwiftData
 
 @main
 struct PokedexApp: App {
-    @State private var showSplashScreen = true // Controls the visibility of the splash screen
+    @State private var showSplashScreen = true // Tracks whether the splash screen is visible
 
     var body: some Scene {
         WindowGroup {
             ZStack {
-                // Main content view for the app
+                // Main app content
                 ContentView()
-                    .opacity(showSplashScreen ? 0 : 1) // Fade in the ContentView when the splash screen disappears
+                    .opacity(showSplashScreen ? 0 : 1) // Fade in when splash screen disappears
                     .animation(.easeInOut(duration: 1), value: showSplashScreen)
 
-                // Splash screen display
+                // Splash screen overlay
                 if showSplashScreen {
                     SplashScreenView()
-                        .transition(.opacity) // Smooth fade-out effect for the splash screen
+                        .transition(.opacity) // Smooth fade-out for the splash screen
                         .onAppear {
-                            // Hide the splash screen after a 2-second delay
+                            // Dismiss splash screen after a delay
                             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                                 withAnimation {
                                     showSplashScreen = false
@@ -28,6 +28,6 @@ struct PokedexApp: App {
                 }
             }
         }
-        .modelContainer(for: FavoritePokemon.self)
+        .modelContainer(for: FavoritePokemon.self) // Attach the model container for managing FavoritePokemon
     }
 }
